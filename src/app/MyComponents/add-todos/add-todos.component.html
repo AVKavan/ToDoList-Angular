@@ -1,0 +1,14 @@
+<div class="my-4">
+<h4>Add Todos</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Todo title</label>
+      <input type="text" class="form-control" [(ngModel)]="title" name="title" id="title" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="Desc" class="form-label">Todo Desciption</label>
+      <textarea type="text" [(ngModel)]="Desc"  class="font-size" rows="5" name="Desc" class="form-control" id="Desc"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Todo</button>
+  </form>
+</div>
